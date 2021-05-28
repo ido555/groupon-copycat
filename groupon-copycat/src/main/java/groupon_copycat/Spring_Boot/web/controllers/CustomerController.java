@@ -17,7 +17,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("customer")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://groupon-copycat.herokuapp.com:4200")
 public class CustomerController {
     //	@Autowired
     private final Map<String, ClientWrapper> sessions = LoginController.sessions;
