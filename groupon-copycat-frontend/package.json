@@ -7,8 +7,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start": "http-server-spa dist/groupon-copycat-frontend index.html $PORT",
-    "heroku-postbuild": "ng build --prod && npm install -g http-server-spa"
+    "start": "http-server-spa dist/CouponsProject index.html $PORT",
+    "heroku-postbuild": "ng build --configuration production && npm install -g http-server-spa"
   },
   "private": true,
   "dependencies": {

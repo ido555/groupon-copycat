@@ -17,7 +17,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("admin")
-@CrossOrigin(origins = "https://groupon-copycat.herokuapp.com:4200")
+//@CrossOrigin(origins = "https://groupon-copycat-frontend.herokuapp.com/")
 public class AdminController {
     // ended up using sessions to get the Admin Facade instead of autowire
     // to keep the code robust in case of future implementation of multiple admins

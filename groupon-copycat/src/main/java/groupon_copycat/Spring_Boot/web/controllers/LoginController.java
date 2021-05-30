@@ -18,7 +18,7 @@ import java.util.Map.Entry;
 
 
 @RestController
-@CrossOrigin(origins = "https://groupon-copycat.herokuapp.com:4200")
+//@CrossOrigin(origins = "https://groupon-copycat-frontend.herokuapp.com/")
 public class LoginController {
     //	@Autowired
     public static Map<String, ClientWrapper> sessions = new HashMap<>();
