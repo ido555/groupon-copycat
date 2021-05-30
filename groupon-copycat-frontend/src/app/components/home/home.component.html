@@ -11,7 +11,7 @@
   <div id="vidWrapper">
     <!-- atleast one of these "muted" things made this autoplay without being blocked so ill just leave it like that -->
     <video [muted]="true" autoplay class="video-fluid z-depth-0" id="strechVid" loop muted oncanplay="this.muted=true">
-      <source src="http://localhost:8080/bokeh.mp4" type="video/mp4"/>
+      <source src="{{baseUrl}}bokeh.mp4" type="video/mp4"/>
     </video>
   </div>
 

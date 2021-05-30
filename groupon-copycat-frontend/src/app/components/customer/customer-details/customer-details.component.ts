@@ -4,6 +4,7 @@ import {GlobalService} from '../../../services/global.service';
 import {CustomerControllerService} from '../../../services/customer-controller.service';
 import {Customer} from '../../../models/customer';
 import {Coupon} from '../../../models/coupon';
+import {environment} from "../../../../environments/environment";
 
 @Component({
   selector: 'app-customer-details',
@@ -11,6 +12,7 @@ import {Coupon} from '../../../models/coupon';
   styleUrls: ['./customer-details.component.css']
 })
 export class CustomerDetailsComponent implements OnInit {
+  baseUrl = environment.baseUrl;
   coupons: Array<Coupon> = new Array<Coupon>();
   // initialize cust because html interpolation starts too early and throws errors
   // just before getDetails() completes

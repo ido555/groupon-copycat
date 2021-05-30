@@ -4,6 +4,7 @@ import {LoginControllerService} from '../../../services/login-controller.service
 import {Coupon} from '../../../models/coupon';
 import {CustomerControllerService} from '../../../services/customer-controller.service';
 import {CouponCategory} from '../../../enums/coupon-category.enum';
+import {environment} from "../../../../environments/environment";
 
 @Component({
   selector: 'app-customer-page',
@@ -12,6 +13,7 @@ import {CouponCategory} from '../../../enums/coupon-category.enum';
 })
 
 export class CustomerPageComponent implements OnInit {
+  baseUrl = environment.baseUrl;
   coupons: Array<Coupon> = new Array<Coupon>();
   public purchasedCoupons: Array<Coupon> = new Array<Coupon>();
 

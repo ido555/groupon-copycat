@@ -3,6 +3,7 @@ import {Component, OnInit} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import {GlobalService} from '../../services/global.service';
 import {Router} from '@angular/router';
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,8 @@ import {Router} from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  baseUrl = environment.baseUrl;
+  
   constructor(private loginBox: MatDialog, public glob:GlobalService) {
   }
 
